@@ -3,7 +3,6 @@ rule MAL_Msil_Net_NixImports_Loader {
       description = "Detects NixImports .NET loader"
       author = "dr4k0nia"
       date = "2023-05-21"
-      score = 75
       reference = "https://github.com/dr4k0nia/NixImports"
    strings:
       $op_pe = {C2 95 C2 97 C2 B2 C2 92 C2 82 C2 82 C2 8E C2 82 C2 82 C2 82 C2 82 C2 86 C2 82} // PE magic
